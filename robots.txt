@@ -1,0 +1,20 @@
+# Allow all search engines to crawl everything
+User-agent: *
+Disallow:
+
+# Specify sitemap location
+Sitemap: http://Lotus3-6-5.com/sitemap.xml
+
+# Prevent crawling of admin or sensitive pages (if applicable)
+Disallow: /admin/
+Disallow: /login/
+Disallow: /wp-admin/
+Disallow: /cgi-bin/
+
+# Prevent crawling of temporary files or test pages
+Disallow: /test/
+Disallow: /temp/
+
+# Crawl-delay for specific bots (optional)
+User-agent: Bingbot
+Crawl-delay: 10
